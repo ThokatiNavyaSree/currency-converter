@@ -1,0 +1,86 @@
+/* Add your styles here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #DEEACF;
+  color: #2E4A07;
+}
+
+.heading{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 16px;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  text-shadow: 1px 1px 2.5px rgb(242, 125, 125);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.select-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 9px;
+}
+
+.input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #8db456;
+  color: #2E4A07;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #9dbf6e;
+}
+
+.label-converted{
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin: 30px 0 20px 0;
+}
+
+.converted-value{
+  font-weight: bold;
+}

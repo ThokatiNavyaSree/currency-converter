@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currency Converter Backend Tests should convert currency successfully 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      {
+        "convertedAmount": 50000,
+      },
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`Currency Converter Backend Tests should fetch top cryptocurrencies successfully 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      [
+        {
+          "id": "bitcoin",
+          "name": "Bitcoin",
+        },
+      ],
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
