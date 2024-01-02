@@ -9,17 +9,18 @@ const CurrencyConverterForm = () => {
   const [targetCurrency, setTargetCurrency] = useState('usd');
   const [convertedAmount, setConvertedAmount] = useState(null);
   const [error, setError] = useState(null);
+  const baseURL = 'https://currency-converter-backend-pb4w.onrender.com/';
 
   useEffect(() => {
     // Fetch the list of top cryptocurrencies from your backend
-    axios.get('http://localhost:3001/api/top-cryptos')
+    axios.get(`${baseURL}/api/top-cryptos`)
       .then((response) => setTopCryptos(response.data))
       .catch((error) => setError(error.message));
   }, []);
 
   const handleConvert = () => {
     // Make a request to your backend to perform currency conversion
-    axios.get('http://localhost:3001/api/convert', {
+    axios.get(`${baseURL}/api/convert`, {
       params: { sourceCrypto, amount, targetCurrency },
     })
       .then((response) => setConvertedAmount(response.data.convertedAmount))
