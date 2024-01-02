@@ -9,7 +9,7 @@ const CurrencyConverterForm = () => {
   const [targetCurrency, setTargetCurrency] = useState('usd');
   const [convertedAmount, setConvertedAmount] = useState(null);
   const [error, setError] = useState(null);
-  const baseURL = 'https://currency-converter-backend-pb4w.onrender.com/';
+  const baseURL = 'https://currency-converter-backend-pb4w.onrender.com';
 
   useEffect(() => {
     // Fetch the list of top cryptocurrencies from your backend
